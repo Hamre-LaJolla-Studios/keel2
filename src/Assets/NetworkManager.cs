@@ -33,9 +33,12 @@ public class NetworkManager : MonoBehaviour {
 
 	void OnServerInitialized()
 	{
+		GameObject player;
+		
 		Debug.Log ("Server Initialized");
 		
-		SpawnPlayer();
+		player = SpawnPlayer();
+		TrackPlayerLocal(player);
 	}
 
 	private void JoinServer(HostData hostData)
@@ -45,28 +48,28 @@ public class NetworkManager : MonoBehaviour {
 	
 	void OnConnectedToServer()
 	{
-		Debug.Log("Connected to Server");
-		
-		SpawnPlayer();
-	}
-
-	private void SpawnPlayer()
-	{
-		Debug.developerConsoleVisible = true;
-		
-		GameObject camera;
 		GameObject player;
 		
-		player = (GameObject)Network.Instantiate(playerPrefab, new Vector3(75.0f, 10.0f, 25.0f) , Quaternion.identity, 0);
-	
-		if (networkView.isMine)
-		{
-			camera = GameObject.FindGameObjectWithTag("MainCamera");
+		Debug.Log("Connected to Server");
 		
-			trackingBehavior = camera.GetComponent<TrackingBehavior>();
-			trackingBehavior.target = player;
-		}
+		player = SpawnPlayer();
+		TrackPlayerLocal(player);
+	}
+
+	private void TrackPlayerLocal(GameObject player)
+	{
+		trackingBehavior = Camera.main.GetComponent<TrackingBehavior>();
+		trackingBehavior.target = player;
+	}
+
+	private GameObject SpawnPlayer()
+	{
+		GameObject player;
 		
+		player = (GameObject)Network.Instantiate(
+			playerPrefab, new Vector3(75.0f, 10.0f, 25.0f) , Quaternion.identity, 0);
+		
+		return player;	
 	}
 
 	void OnGUI()
@@ -86,7 +89,8 @@ public class NetworkManager : MonoBehaviour {
 			{
 				for (int i = 0; i < hostList.Length; i++)
 				{
-					if (GUI.Button(new Rect(400, 100 + (110 * i), 300, 100), hostList[i].gameName))
+					if (GUI.Button(new Rect(400, 100 + (110 * i), 300, 100),
+						hostList[i].gameName))
 					{
 						JoinServer(hostList[i]);
 					}
