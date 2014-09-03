@@ -9,6 +9,8 @@ public class NetworkManager : MonoBehaviour {
 	private HostData[] hostList;
 	
 	public GameObject playerPrefab;
+	
+	private TrackingBehavior trackingBehavior;
 
 	private void RefreshHostList()
 	{
@@ -50,7 +52,21 @@ public class NetworkManager : MonoBehaviour {
 
 	private void SpawnPlayer()
 	{
-		Network.Instantiate(playerPrefab, new Vector3(75.0f, 10.0f, 25.0f) , Quaternion.identity, 0);
+		Debug.developerConsoleVisible = true;
+		
+		GameObject camera;
+		GameObject player;
+		
+		player = (GameObject)Network.Instantiate(playerPrefab, new Vector3(75.0f, 10.0f, 25.0f) , Quaternion.identity, 0);
+	
+		if (networkView.isMine)
+		{
+			camera = GameObject.FindGameObjectWithTag("MainCamera");
+		
+			trackingBehavior = camera.GetComponent<TrackingBehavior>();
+			trackingBehavior.target = player;
+		}
+		
 	}
 
 	void OnGUI()

@@ -6,15 +6,15 @@ Direct3D:
     Vendor:   Intel
     VRAM:     64 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.161 seconds
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+- Completed reload, in  0.120 seconds
 desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -26,30 +26,37 @@ Direct3D:
     Vendor:   Intel
     VRAM:     64 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\root\Documents\New Unity Project\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.154 seconds
-WARNING: Shader Unsupported: 'Reflective/VertexLit' - Pass '' shader state not supported
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+- Completed reload, in  0.117 seconds
 WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
  
 (Filename:  Line: 2437)
 
-desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
 Server Initialized
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 
-WARNING: Shader Unsupported: 'Reflective/VertexLit' - Pass '' shader state not supported
+NullReferenceException: Object reference not set to an instance of an object
+  at NetworkManager.SpawnPlayer () [0x00000] in <filename unknown>:0 
+  at NetworkManager.OnServerInitialized () [0x00000] in <filename unknown>:0 
+UnityEngine.Network:InitializeServer(Int32, Int32, Boolean)
+NetworkManager:StartServer()
+NetworkManager:OnGUI()
+ 
+(Filename:  Line: -1)
+
+desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
 WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
 HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
@@ -59,6 +66,12 @@ HDR RenderTexture format is not supported on this platform. This camera will ren
 Connected to Server
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at NetworkManager.SpawnPlayer () [0x00000] in <filename unknown>:0 
+  at NetworkManager.OnConnectedToServer () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
 The server has disconnected from the client. Most likely the server has shut down.
  
