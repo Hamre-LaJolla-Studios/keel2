@@ -14,7 +14,7 @@ Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly
 Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
 Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.180 seconds
+- Completed reload, in  0.145 seconds
 desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -26,37 +26,6 @@ HDR RenderTexture format is not supported on this platform. This camera will ren
 (Filename:  Line: 2437)
 
 Server Initialized
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Initialize engine version: 4.5.3f3 (fca41a4fabea)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
-    Vendor:   Intel
-    VRAM:     64 MB
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\root\Documents\keel2\bin\keel2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-- Completed reload, in  0.080 seconds
-desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
-<RI> Initializing input.
-<RI> Input initialized.
-WARNING: Shader Unsupported: 'Reflective/VertexLit' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/Nature/Tree Creator Leaves Optimized' - Pass '' shader state not supported
-WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-HDR RenderTexture format is not supported on this platform. This camera will render without HDR buffers.
- 
-(Filename:  Line: 2437)
-
-Connected to Server
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
 

@@ -46,9 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Entity.cs" />
      <Compile Include="Assets\NetworkManager.cs" />
      <Compile Include="Assets\Player.cs" />
+     <Compile Include="Assets\PlayerEntity.cs" />
      <Compile Include="Assets\camera\TrackingBehavior.cs" />
+     <Compile Include="Assets\codebase\system\Console.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">

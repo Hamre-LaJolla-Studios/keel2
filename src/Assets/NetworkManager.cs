@@ -12,6 +12,7 @@ public class NetworkManager : MonoBehaviour {
 	
 	private TrackingBehavior trackingBehavior;
 
+
 	private void RefreshHostList()
 	{
 		MasterServer.RequestHostList (gameTypeName);
