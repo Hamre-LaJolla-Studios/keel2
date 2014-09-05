@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Base path: C:/Program Files (x86)/Unity/Editor/Data
 Pipe name: \\.\pipe\UnityShaderCompiler-1-8356
 Cmd: getPlatforms
@@ -19,3 +20,10 @@ Cmd: compileSnippet
   api=4 type=0 insize=3996 outsize=2883 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
 Cmd: compileSnippet
   api=4 type=1 insize=3996 outsize=1152 kw=LIGHTMAP_OFF DIRLIGHTMAP_OFF HDR_LIGHT_PREPASS_OFF ok=1
+=======
+Base path: D:/Programs/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-1-5624
+Cmd: getPlatforms
+Cmd: preprocess
+  insize=3110 outsize=1735 ok=1
+>>>>>>> f653c244ef1be7c7732b0c213db95b98eb26d258
